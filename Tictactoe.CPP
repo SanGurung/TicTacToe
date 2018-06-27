@@ -1,5 +1,4 @@
-//This program is coded by santos gurung of pec/Pokhara nepal
-//For any comments in it please mail meh at santosgurung07@gmail.com
+//This program is coded by santos gurung 
 #include<conio.h>
 #include<stdio.h>
 #include<dos.h>
@@ -89,7 +88,7 @@ initgraph(&gdriver,&gmode,"c:\\turboc3\\bgi");
    player=1; box1=21;box2=23;box3=12;box4=40;box5=15;box6=36;box7=17;box8=18;box9=29; gameover=0;
    player=1; //Games Starts From Here
    againl:
-   setcolor(BLACK); outtextxy(220,10,"€€€€€€€€€€€€€€€€");
+   setcolor(BLACK); outtextxy(220,10,"√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ");
    if(player==1){ setcolor(LIGHTRED); setfillstyle(SOLID_FILL,RED); outtextxy(230,10,"Turn:Player 1"); outtextxy(0,426,"Turn::."); }
    else{ setcolor(LIGHTBLUE); setfillstyle(SOLID_FILL,BLUE);  outtextxy(230,10,"Turn:Player 2"); outtextxy(0,426,"Turn::.");}
    pieslice(15,450,45,325,12);
@@ -97,9 +96,9 @@ initgraph(&gdriver,&gmode,"c:\\turboc3\\bgi");
    setcolor(BLACK);
    if(l=='n'||l=='N'){ goto play; }
    else if(l==ESC){ goto mount;}
-   outtextxy(415,10,"€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€");
+   outtextxy(415,10,"√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ");
    setcolor(WHITE);
-   switch(l){
+   switch(l){ //I could have re written this repeated code pattern (I was started to programming). 
    case '1': if(box1==1||box1==2) { outtextxy(415,10,"Sorry,already pressed::."); goto againl; } break;
    case '2': if(box2==1||box2==2) { outtextxy(415,10,"Sorry,already pressed::."); goto againl; } break;
    case '3': if(box3==1||box3==2) { outtextxy(415,10,"Sorry,already pressed::."); goto againl; } break;
@@ -111,7 +110,7 @@ initgraph(&gdriver,&gmode,"c:\\turboc3\\bgi");
    case '9': if(box9==1||box9==2) { outtextxy(415,10,"Sorry,already pressed::."); goto againl; } break;
    default: outtextxy(415,10,"You have pressed Wrong key::.");  goto againl; }
     setcolor(WHITE);   callit.mychoicecircle(l);
-   if(player==1){player=2;}else{player=1;}
+   if(player==1){player=2;}else{player=1;} 
    if(box7==box8&&box8==box9) { xx=200;yy=155;xz=430;yz=155; callit.makealine(xx,yy,xz,yz); goto play;}
    if(box4==box5&&box5==box6) { xx=200;yy=230;xz=430;yz=230; callit.makealine(xx,yy,xz,yz); goto play;}
    if(box1==box2&&box2==box3) { xx=200;yy=300;xz=430;yz=300; callit.makealine(xx,yy,xz,yz); goto play;}
@@ -155,9 +154,6 @@ void appalau()
   e=e+50; }
    nosound();
 }
-//Please donot remove this comments
-//A dedicated work of santosgurung07@gmail.com
-// later i will be keeping all my works in website...
 void win()
 {  //Really a good sound here::.
  sound(1000); delay(200);   nosound();
